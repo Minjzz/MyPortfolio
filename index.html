@@ -1,0 +1,438 @@
+<!-- Sticky Navbar Example -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="assets/css/animation.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-actions">
+        <button class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <a href="index.html" class="navbar-logo" style="--i: 1">My <span>Portfolio</span></a>
+    </div>
+
+    <ul>
+        <li><a href="#home" class="active" style="--i: 2">Home</a></li>
+        <li><a href="#about" style="--i: 3">About</a></li>
+        <li><a href="#skills" style="--i: 4">Skills</a></li>
+        <li><a href="#projects" style="--i: 5">Projects</a></li>
+    </ul>
+    <a id="open" class="cbtn contact-btn" style="--i: 6">
+        <span class="contact-text">Contact</span>
+        <i class="fa-solid fa-address-book"></i>
+    </a>
+
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <h1>Contact Me</h1>
+            <a id="close" class="close-icon"><i class="fa-solid fa-xmark"></i></a>
+            <form id="contact_form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone (optional)">
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cbtn" style="width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: -20px; margin-top: 10px;">Send Message</button>
+            </form>
+        </div>
+    </div>
+  </nav>
+  <main class="main">
+        <section id="home" class="hero-container">
+            <div class="hero-image hero-image-animation">
+                <img src="images/pfp.png" alt="image">
+            </div>
+            <div class="hero-content hero-content-animation">
+                <h3 style="--i: 1">Hello, I'm</h3>
+                <h1 style="--i: 2">Marlon Villegas</h1>
+                <h2 style="--i: 3">And I'm an aspiring <span class="typed"></span></h2>
+                <p style="--i: 4">
+                    I'm a dedicated programmer with a strong interest in web development. I'm currently learning both front-end and back-end technologies to become a skilled Full Stack Developer.
+                </p>
+
+                <div class="social-icons" style="--i: 5">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-container" >
+            <div class="about-content">
+                <div class="content">
+                    <h1>About Me</h1>
+                    <p>
+                        Hi! I'm a dedicated and curious programmer passionate about technology and creative problem-solving. I'm always eager to learn new things, take on challenges, and build real-world projects that help me grow. Whether it’s designing a clean interface, writing code, or collaborating on a team project, I’m always looking to improve and make an impact.
+                    </p>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3>Learning & Adaptability</h3>
+                            <p>
+                                I pick up new skills quickly and enjoy exploring different areas of tech. Whether it's learning a new programming language or mastering design tools, I adapt fast and love the process of growth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h3>Front-End & Back-End Basics</h3>
+                            <p>
+                                I've built projects using HTML, CSS, and JavaScript on the front end, and I'm learning the basics of back-end development with tools like Node.js and MySQL. I enjoy seeing both sides of how websites work.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fa-solid fa-handshake"></i>
+                            <h3>Team Projects & Communication</h3>
+                            <p>
+                                I'm a dedicated programmer with a strong interest in web development. I'm currently learning both front-end and back-end technologies to become a skilled Full Stack Developer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-container">
+            <div class="skills-content">
+                <div class="content">
+                    <h1>Skills & Technologies</h1>
+                    <p>
+                    I'm a passionate student exploring the world of web development through hands-on projects and continuous learning. My current skill set includes front-end technologies like HTML, CSS, and JavaScript, along with foundational knowledge in back-end tools such as MySQL. I'm focused on writing clean, responsive code and building user-friendly interfaces, while also learning how server-side logic works. Whether I’m debugging a layout or experimenting with a new framework, I’m always excited to grow and improve.
+                    </p>
+                </div>
+
+                <div class="logos">
+                    <div class="logo-slide">
+                        <img src="logos/html.png" alt="HTML Logo">
+                        <img src="logos/css.png" alt="CSS Logo">
+                        <img src="logos/js.png" alt="JavaScript Logo">
+                        <img src="logos/react.png" alt="React Logo">
+                        <img src="logos/mysql.png" alt="MySQL Logo">
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h1>What I Can Do?</h1>
+                    <p>I’m eager to apply my skills to build real-world projects. Whether it’s designing interfaces, writing clean code, or collaborating with a team, I bring enthusiasm and a willingness to learn to every challenge.</p>
+                </div>
+
+                <div class="skills-card-container">
+                    <div class="skills-card">
+                        <div class="skills-card-content">
+                            <i class="fa-solid fa-paint-brush"></i>
+                            <h3>Learning & Adaptability</h3>
+                            <p>
+                                Build responsive, user-friendly websites using HTML, CSS, and JavaScript to create engaging experiences.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="skills-card">
+                        <div class="skills-card-content">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Front-End & Back-End Basics</h3>
+                            <p>
+                               Understand server-side concepts and work with tools like MySQL and databases to handle data and logic.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="skills-card">
+                        <div class="skills-card-content">
+                            <i class="fa-solid fa-users"></i>
+                            <h3>Team Projects & Communication</h3>
+                            <p>
+                                Communicate effectively and contribute to team projects using version control and agile practices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="project-container" >
+            <div class="project-content">
+                <div class="content">
+                    <h1>My Projects</h1>
+                    <p>
+                        Below are some of the projects I’ve worked on, showcasing my skills in both front-end and back-end development. From web apps to databases, each project has helped me learn new technologies, enhance my problem-solving abilities, and grow as an aspiring full-stack developer.
+                    </p>
+                </div>
+
+                <div class="project-card-container">
+                    <div class="project-card">
+                        <div class="project-card-content">
+                            <img src="images/todo.png" alt="Todo Website">
+                            <h3>Todo List Using OOP Method for Database (School Work)</h3>
+                            <p>
+                                A Todo list app built using OOP principles to manage tasks in a MySQL database. Users can add, update, and delete tasks. Focused on applying OOP with backend technologies for better scalability.
+                            </p>
+                            <div class="project-tech">
+                                <i class="fa-brands fa-html5" title="HTML5"></i>
+                                <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                                <i class="fa-solid fa-database" title="MySQL"></i>
+                            </div>
+                            <a href="javascript:void(0);" class="btn" onclick="openModal('todo')">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-content">
+                            <img src="images/SIMS.png" alt="SIMS Logo">
+                            <h3>Student Information Management System (School Work)</h3>
+                            <p>
+                                A web app to manage student data, including grades and attendance. Built with HTML, CSS, JavaScript, and a MySQL back-end for data handling and user authentication.
+                            </p>
+                            <div class="project-tech">
+                                <i class="fa-brands fa-html5" title="HTML5"></i>
+                                <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                                <i class="fa-solid fa-database" title="MySQL"></i>
+                            </div>
+                            <a href="javascript:void(0);" class="btn" onclick="openModal('sims')">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-content">
+                            <img src="images/lost&found.png" alt="Lost&Found Website">
+                            <h3>Lost & Found Website (Mini Capstone)</h3>
+                            <p>
+                                A platform to help users post lost and found items. Includes search filters and a simple back-end with MySQL. Focused on creating an intuitive UI and handling data efficiently.
+                            </p>
+                            <div class="project-tech">
+                                <i class="fa-brands fa-html5" title="HTML5"></i>
+                                <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                                <i class="fa-brands fa-js" title="JavaScript"></i>
+                                <i class="fa-solid fa-database" title="MySQL"></i>
+                            </div>
+                            <a href="javascript:void(0);" class="btn" onclick="openModal('lostfound')">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-content">
+                            <img src="images/fureverpaw.png" alt="FurEver Paw Website">
+                            <h3>FurEver Paw/Petreon (Mini Capstone)</h3>
+                            <p>
+                                A pet clinic which also an e-commerce website where users can book an appointments and can buy things for their pets. Developed both the front-end and back-end using MySQL, focusing on smooth UX and data handling.
+                            </p>
+                            <div class="project-tech">
+                                <i class="fa-brands fa-html5" title="HTML5"></i>
+                                <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                                <i class="fa-brands fa-js" title="JavaScript"></i>
+                                <i class="fa-solid fa-database" title="MySQL"></i>
+                            </div>
+                            <a href="javascript:void(0);" class="btn" onclick="openModal('fureverpaw')">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="todo-modal" class="modal1-container">
+                    <div class="modal1">
+                        <button class="close-modal" onclick="closeModal('todo')">&times;</button>
+                        <div class="modal1-header">
+                            <h2>Todo List Using OOP Method for Database</h2>
+                        </div>
+                        <p class="modal1-desc">
+                            A Todo list app built using OOP principles to manage tasks in a MySQL database. Users can add, update, and delete tasks. Focused on applying OOP with backend technologies for better scalability.
+                        </p>
+                        <div class="carousel-container">
+                            <button class="prev" onclick="changeImage('todo', -1)">&#10094;</button>
+                            <div class="carousel">
+                                <img class="carousel-img" src="images/todo.png" alt="Image 1">
+                            </div>
+                            <button class="next" onclick="changeImage('todo', 1)">&#10095;</button>
+                        </div>
+                        <div class="carousel-thumbnails">
+                            <img src="images/todo.png" onclick="showImage('todo', 0)">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sims-modal" class="modal1-container">
+                    <div class="modal1">
+                        <button class="close-modal" onclick="closeModal('sims')">&times;</button>
+                        <div class="modal1-header">
+                            <h2>Student Information Management System</h2>
+                        </div>
+                        <p class="modal1-desc">
+                            A web app to manage student data, including grades and attendance. Built with HTML, CSS, JavaScript, and a MySQL back-end for data handling and user authentication.
+                        </p>
+                        <div class="carousel-container">
+                            <button class="prev" onclick="changeImage('sims', -1)">&#10094;</button>
+                            <div class="carousel">
+                                <img class="carousel-img" src="images/SIMS.png" alt="SIMS Main">
+                            </div>
+                            <button class="next" onclick="changeImage('sims', 1)">&#10095;</button>
+                        </div>
+                        <div class="carousel-thumbnails">
+                            <img src="images/SIMS.png" onclick="showImage('sims', 0)">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lostfound-modal" class="modal1-container">
+                    <div class="modal1">
+                        <button class="close-modal" onclick="closeModal('lostfound')">&times;</button>
+                        <div class="modal1-header">
+                            <h2>Lost &amp; Found Website</h2>
+                        </div>
+                        <p class="modal1-desc">
+                            A platform to help users post lost and found items. Includes search filters and a simple back-end with MySQL. Focused on creating an intuitive UI and handling data efficiently.
+                        </p>
+                        <div class="carousel-container">
+                            <button class="prev" onclick="changeImage('lostfound', -1)">&#10094;</button>
+                            <div class="carousel">
+                                <img class="carousel-img" src="images/lost&found.png" alt="Lost & Found Main">
+                                <img class="carousel-img" src="images/lnf1.png" alt="Lost & Found Screenshot 1">
+                                <img class="carousel-img" src="images/lnf2.png" alt="Lost & Found Screenshot 2">
+                                <img class="carousel-img" src="images/lnf3.png" alt="Lost & Found Screenshot 3">
+                            </div>
+                            <button class="next" onclick="changeImage('lostfound', 1)">&#10095;</button>
+                        </div>
+                        <div class="carousel-thumbnails">
+                            <img src="images/lost&found.png" onclick="showImage('lostfound', 0)">
+                            <img src="images/lnf1.png" onclick="showImage('lostfound', 1)">
+                            <img src="images/lnf2.png" onclick="showImage('lostfound', 2)">
+                            <img src="images/lnf3.png" onclick="showImage('lostfound', 3)">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fureverpaw-modal" class="modal1-container">
+                    <div class="modal1">
+                        <button class="close-modal" onclick="closeModal('fureverpaw')">&times;</button>
+                        <div class="modal1-header">
+                            <h2>FurEver Paw / Petreon</h2>
+                        </div>
+                        <p class="modal1-desc">
+                            A pet clinic and e-commerce website where users can book appointments and buy things for their pets. Developed both the front-end and back-end using MySQL, focusing on smooth UX and data handling.
+                        </p>
+                        <div class="carousel-container">
+                            <button class="prev" onclick="changeImage('fureverpaw', -1)">&#10094;</button>
+                            <div class="carousel">
+                                <img class="carousel-img" src="images/fureverpaw.png" alt="FurEver Paw Main">
+                                <img class="carousel-img" src="images/f1.png" alt="FurEver Paw Screenshot 1">
+                                <img class="carousel-img" src="images/f2.png" alt="FurEver Paw Screenshot 2">
+                                <img class="carousel-img" src="images/f3.png" alt="FurEver Paw Screenshot 3">
+                                <img class="carousel-img" src="images/f4.png" alt="FurEver Paw Screenshot 4">
+                                <img class="carousel-img" src="images/f5.png" alt="FurEver Paw Screenshot 5">
+                                <img class="carousel-img" src="images/f6.png" alt="FurEver Paw Screenshot 6">
+                            </div>
+                            <button class="next" onclick="changeImage('fureverpaw', 1)">&#10095;</button>
+                        </div>
+                        <div class="carousel-thumbnails">
+                            <img src="images/fureverpaw.png" onclick="showImage('fureverpaw', 0)">
+                            <img src="images/f1.png" onclick="showImage('fureverpaw', 1)">
+                            <img src="images/f2.png" onclick="showImage('fureverpaw', 2)">
+                            <img src="images/f3.png" onclick="showImage('fureverpaw', 3)">
+                            <img src="images/f4.png" onclick="showImage('fureverpaw', 4)">
+                            <img src="images/f5.png" onclick="showImage('fureverpaw', 5)">
+                            <img src="images/f6.png" onclick="showImage('fureverpaw', 6)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h2>Marlon Villegas</h2>
+                <p>
+                    Passionate student and aspiring full-stack developer dedicated to learning and building impactful projects.
+                </p>
+                <p>© 2025 Marlon Villegas. All rights reserved.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-square-facebook"></i>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-square-instagram"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <!-- <a href="mailto:youremail@example.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed('.typed', {
+        strings: ['Full Stack Developer.'],
+        typeSpeed: 125,
+        backSpeed: 50,
+        loop: true
+    });
+
+    var copy = document.querySelector(".logo-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".navbar ul li a");
+
+        function onScroll() {
+            let scrollPos = window.scrollY + 120;
+            sections.forEach(section => {
+            if (
+                scrollPos >= section.offsetTop &&
+                scrollPos < section.offsetTop + section.offsetHeight
+            ) {
+                navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === "#" + section.id) {
+                    link.classList.add("active");
+                }
+                });
+            }
+            });
+        }
+
+        window.addEventListener("scroll", onScroll);
+        onScroll();
+    });
+    </script>
+</body>         
+</html>
